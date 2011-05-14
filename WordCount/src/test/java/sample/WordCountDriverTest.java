@@ -1,6 +1,7 @@
 package sample;
 
-import static org.mockito.Mockito.*;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,13 +10,9 @@ import java.io.InputStreamReader;
 
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FileUtil;
-import org.apache.hadoop.fs.LocalFileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.OutputLogFilter;
-
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
 import org.junit.Test;
 
 public class WordCountDriverTest {

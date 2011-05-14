@@ -5,7 +5,6 @@ import static org.mockito.Mockito.*;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.OutputCollector;
-
 import org.junit.Test;
 
 public class WordCountMapperTest {
