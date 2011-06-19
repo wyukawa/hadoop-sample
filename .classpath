@@ -5,7 +5,7 @@
 	<classpathentry kind="src" path="src/test/resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="lib/hadoop-0.20.2-core.jar" sourcepath="libsrc/hadoop-core-0.20.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-0.20.2-core.jar" sourcepath="libsrc/src.zip"/>
 	<classpathentry kind="lib" path="lib/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="lib/commons-codec-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/commons-el-1.0.jar"/>

@@ -1,4 +1,4 @@
-package sample;
+package sample.wordcount;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
@@ -24,7 +24,7 @@ public class WordCountDriverTest {
 		conf.set("mapred.job.tracker", "local");
 
 		Path input = new Path(System.getProperty("user.dir")
-				+ "/src/test/resources/input");
+				+ "/src/test/resources/sample/wordcount/input");
 		Path output = new Path("output");
 
 		FileSystem fs = FileSystem.getLocal(conf);
@@ -46,7 +46,7 @@ public class WordCountDriverTest {
 		assertThat(outputFiles.length, is(1));
 
 		BufferedReader actual = asBufferedReader(fs.open(outputFiles[0]));
-		BufferedReader expected = asBufferedReader(Thread.currentThread().getContextClassLoader().getResourceAsStream("expected.txt"));
+		BufferedReader expected = asBufferedReader(Thread.currentThread().getContextClassLoader().getResourceAsStream("sample/wordcount/expected.txt"));
 		String expectedLine;
 		while ((expectedLine = expected.readLine()) != null) {
 			assertThat(actual.readLine(), is(expectedLine));

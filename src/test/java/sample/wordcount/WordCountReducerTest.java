@@ -1,4 +1,4 @@
-package sample;
+package sample.wordcount;
 
 import static org.mockito.Mockito.*;
 
@@ -9,6 +9,8 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.junit.Test;
+
+import sample.wordcount.WordCountReducer;
 
 public class WordCountReducerTest {
 
